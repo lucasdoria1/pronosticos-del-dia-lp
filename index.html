@@ -7,52 +7,55 @@
 <meta name="description" content="Únete gratis al grupo de Telegram de El Profeta Brasileño: pronósticos de fútbol todos los días, directo en tu celular.">
 <meta property="og:title" content="El Profeta Brasileño · Grupo gratis en Telegram">
 <meta property="og:description" content="Pronósticos de fútbol todos los días, gratis, directo en tu Telegram.">
-<meta name="theme-color" content="#0c0d13">
+<meta name="theme-color" content="#0b1410">
+<link rel="icon" href="assets/profeta-simbolo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Archivo:wght@400;500;800&family=IBM+Plex+Mono:wght@600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#0c0d13; --card:#15161d; --line:#262833; --text:#f5f5f7; --muted:#a7a9b6;
-    --orange:#ff7a1a; --orange-dark:#140a02; --tg:#2aabee; --tg-dark:#1d93d2; --green:#35d07f;
+    --bg:#0b1410; --card:#13211a; --line:#24362c; --text:#f2f5ef; --muted:#a3b3a9;
+    --verde:#12a15a; --oro:#ffc629; --on-oro:#1a1300; --tg:#1a86c4; --tg-dark:#156fa3;
+    --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif; --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
   }
   *{box-sizing:border-box}
   html,body{margin:0}
-  body{background:var(--bg);color:var(--text);font-family:Montserrat,system-ui,sans-serif;line-height:1.5;
-    background-image:radial-gradient(60% 40% at 50% 0%,rgba(255,122,26,.22),transparent 70%),
+  body{background:var(--bg);color:var(--text);font-family:Archivo,"Segoe UI",system-ui,sans-serif;line-height:1.5;
+    background-image:radial-gradient(60% 40% at 50% 0%,rgba(18,161,90,.20),transparent 70%),
       linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
     background-size:100% 100%,40px 40px,40px 40px}
   .wrap{max-width:560px;margin:0 auto;padding:0 16px}
   header{padding:18px 0 0;display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.02em}
-  .logo{width:34px;height:34px;border-radius:10px;background:var(--orange);color:var(--orange-dark);display:grid;place-items:center;font-weight:900}
+  .logo{width:36px;height:36px;display:block}
+  header span{font-family:var(--display);font-weight:900;font-size:22px;text-transform:uppercase;letter-spacing:.01em}
   .hero{padding:40px 0 28px;text-align:center}
-  .pill{display:inline-block;border:1px solid rgba(255,122,26,.55);color:var(--orange);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
-  h1{font-weight:900;font-size:clamp(32px,9vw,46px);line-height:1.05;letter-spacing:-.02em;margin:18px 0 14px}
-  h1 b{color:var(--orange)}
+  .pill{display:inline-block;border:1px solid rgba(18,161,90,.6);color:var(--verde);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+  h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(46px,13vw,68px);line-height:.95;letter-spacing:-.005em;margin:18px 0 16px;text-wrap:balance}
+  h1 b{color:var(--verde)}
   .sub{color:var(--muted);font-size:17px;margin:0 auto 26px;max-width:440px}
   .cta{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:64px;border-radius:16px;
-    background:var(--tg);color:#fff;text-decoration:none;font-weight:800;font-size:19px;box-shadow:0 10px 30px rgba(42,171,238,.35);
+    background:var(--tg);color:#fff;text-decoration:none;font-weight:800;font-size:19px;box-shadow:0 10px 30px rgba(26,134,196,.35);
     transition:transform .15s ease,background .15s ease}
   .cta:hover{background:var(--tg-dark)} .cta:active{transform:scale(.98)}
   .cta svg{width:26px;height:26px;flex:none}
   .note{color:var(--muted);font-size:13px;margin-top:10px}
   section{padding:26px 0}
-  h2{font-size:24px;font-weight:900;margin:0 0 16px;letter-spacing:-.01em}
+  h2{font-family:var(--display);font-size:34px;line-height:1;font-weight:800;text-transform:uppercase;margin:0 0 16px;text-wrap:balance}
   .grid{display:grid;gap:12px}
   .item{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
-  .ic{width:40px;height:40px;flex:none;border-radius:12px;background:rgba(255,122,26,.12);color:var(--orange);display:grid;place-items:center;font-size:20px}
+  .ic{width:40px;height:40px;flex:none;border-radius:12px;background:rgba(18,161,90,.14);color:var(--verde);display:grid;place-items:center;font-size:20px}
   .item b{display:block;font-size:16px;margin-bottom:2px} .item span{color:var(--muted);font-size:14px}
-  .ejemplo{background:var(--card);border:1px solid rgba(255,122,26,.5);border-radius:18px;padding:18px}
-  .ejemplo .liga{color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
-  .partido{font-weight:900;font-size:20px;margin:6px 0 12px}
-  .tag{display:inline-block;background:var(--orange);color:var(--orange-dark);font-weight:800;border-radius:999px;padding:6px 14px;font-size:14px;margin:0 6px 8px 0}
+  .ejemplo{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .ejemplo .liga{color:var(--muted);font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+  .partido{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:30px;line-height:1;margin:8px 0 14px}
+  .tag{display:inline-block;background:var(--oro);color:var(--on-oro);font-weight:800;text-transform:uppercase;border-radius:999px;padding:6px 14px;font-size:14px;margin:0 6px 8px 0}
   .ejemplo small{display:block;color:var(--muted);font-size:12px;margin-top:6px}
   ol{padding:0;margin:0;list-style:none;counter-reset:p;display:grid;gap:10px}
   ol li{counter-increment:p;display:flex;gap:12px;align-items:center;font-weight:700}
   ol li::before{content:counter(p);width:32px;height:32px;flex:none;border-radius:50%;background:var(--tg);color:#fff;display:grid;place-items:center;font-weight:900}
   details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px}
   summary{font-weight:800;cursor:pointer;list-style:none} summary::-webkit-details-marker{display:none}
-  summary::after{content:"+";float:right;color:var(--orange);font-weight:900}
+  summary::after{content:"+";float:right;color:var(--verde);font-weight:900}
   details[open] summary::after{content:"–"}
   details p{color:var(--muted);margin:10px 0 0;font-size:15px}
   .final{text-align:center;padding:30px 0 40px}
@@ -67,7 +70,7 @@
 </head>
 <body>
 <div class="wrap">
-  <header><div class="logo">EP</div>El Profeta Brasileño</header>
+  <header><img class="logo" src="assets/profeta-simbolo.svg" alt="" width="36" height="36"><span>El Profeta Brasileño</span></header>
 
   <main>
     <div class="hero">
